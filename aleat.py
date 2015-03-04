@@ -18,5 +18,3 @@ class Aleat(webapp.app):
                 "\r\n")
         return ("200 OK", html)
 
-#if __name__ == "__main__":
-   #ulrAleat = Aleat("localhost", 1234)
