@@ -94,6 +94,6 @@ class webApp:
             parsedRequest = theApp.parse(request, rest)
             (returnCode, htmlAnswer) = theApp.process(parsedRequest)
             print 'Answering back...'
-            recvSocket.send("HTTP/1.1 " + returnCode + " \r\n\r\n"
-                            + htmlAnswer + "\r\n")
+            recvSocket.send("HTTP/1.1 " + returnCode + " \r\n\r\n" +
+                            htmlAnswer + "\r\n")
             recvSocket.close()
